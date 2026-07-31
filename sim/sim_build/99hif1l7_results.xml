@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1781172976" />
+    <testcase name="destuffing_test" classname="bit_destuffing.tb" file="/workspaces/CAN_Bus_cocotb/sim/bit_destuffing/tb.py" lineno="40" time="0.012725830078125" sim_time_ns="420.0" ratio_time="33003.74100719424">
+      <failure error_type="TypeError" error_msg="str.join() takes exactly one argument (2 given)" />
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,48 @@
+-----------------------------------------
+Input Monitor
+========================================
+[INFO ] 65000 : Captured ID=7c7
+[INFO ] 65000 : Captured RTR=0
+[INFO ] 65000 : Captured IDE=0
+[INFO ] 65000 : DLC=8
+[INFO ] 65000 : DATA=bc047f5c67986adf
+-----------------------------------------
+Input Monitor
+========================================
+[INFO ] 85000 : Captured ID=523
+[INFO ] 85000 : Captured RTR=0
+[INFO ] 85000 : Captured IDE=1
+[INFO ] 85000 : DLC=2
+[INFO ] 85000 : DATA=9b227d0cac34025e
+-----------------------------------------
+Input Monitor
+========================================
+[INFO ] 1185000 : Captured ID=094
+[INFO ] 1185000 : Captured RTR=0
+[INFO ] 1185000 : Captured IDE=1
+[INFO ] 1185000 : DLC=2
+[INFO ] 1185000 : DATA=1a189f37567e0441
+-----------------------------------------
+Input Monitor
+========================================
+[INFO ] 1205000 : Captured ID=6d5
+[INFO ] 1205000 : Captured RTR=1
+[INFO ] 1205000 : Captured IDE=0
+[INFO ] 1205000 : DLC=3
+[INFO ] 1205000 : DATA=3f2287eedfc73f7c
+-----------------------------------------
+Input Monitor
+========================================
+[INFO ] 2305000 : Captured ID=37e
+[INFO ] 2305000 : Captured RTR=1
+[INFO ] 2305000 : Captured IDE=0
+[INFO ] 2305000 : DLC=2
+[INFO ] 2305000 : DATA=133687084a5b1c9f
+-----------------------------------------
+Input Monitor
+========================================
+[INFO ] 2325000 : Captured ID=6d5
+[INFO ] 2325000 : Captured RTR=1
+[INFO ] 2325000 : Captured IDE=1
+[INFO ] 2325000 : DLC=7
+[INFO ] 2325000 : DATA=9f165e65af6ce603

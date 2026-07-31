@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1781169688" />
+    <testcase name="destuffing_test" classname="bit_destuffing.tb" file="/workspaces/CAN_Bus_cocotb/sim/bit_destuffing/tb.py" lineno="40" time="0.0009362697601318359" sim_time_ns="0.0" ratio_time="0.0">
+      <failure error_type="ValueError" error_msg="too many values to unpack (expected 2)" />
+    </testcase>
+  </testsuite>
+</testsuites>

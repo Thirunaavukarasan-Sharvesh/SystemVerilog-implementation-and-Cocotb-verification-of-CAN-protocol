@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1781173965" />
+    <testcase name="destuffing_test" classname="bit_destuffing.tb" file="/workspaces/CAN_Bus_cocotb/sim/bit_destuffing/tb.py" lineno="40" time="0.6040465831756592" sim_time_ns="22650.0" ratio_time="37497.108055676705" />
+  </testsuite>
+</testsuites>

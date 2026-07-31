@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1781170183" />
+    <testcase name="destuffing_test" classname="bit_destuffing.tb" file="/workspaces/CAN_Bus_cocotb/sim/bit_destuffing/tb.py" lineno="40" time="0.4018218517303467" sim_time_ns="16490.0" ratio_time="41038.08672671703">
+      <failure error_type="TypeError" error_msg="map() must have at least two arguments." />
+    </testcase>
+  </testsuite>
+</testsuites>

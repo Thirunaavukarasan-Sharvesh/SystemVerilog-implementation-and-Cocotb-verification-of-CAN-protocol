@@ -1,0 +1,147 @@
+
+=====================================
+INPUT FRAME
+=====================================
+ID   = 3c4
+RTR  = 0
+IDE  = 0
+DLC  = 8
+DATA = 3c2ba26692178378
+
+========== HEADER ==========
+
+--- SOF ---
+[000] state=1 counter=0 bit=0
+
+--- ID ---
+[001] state=1 counter=1 bit=0
+[002] state=1 counter=2 bit=1
+[003] state=1 counter=3 bit=1
+[004] state=1 counter=4 bit=1
+[005] state=1 counter=5 bit=1
+[006] state=1 counter=6 bit=0
+[007] state=1 counter=7 bit=0
+[008] state=1 counter=8 bit=0
+[009] state=1 counter=9 bit=1
+[010] state=1 counter=10 bit=0
+[011] state=1 counter=11 bit=0
+
+--- RTR ---
+[012] state=1 counter=12 bit=0
+
+--- IDE ---
+[013] state=1 counter=13 bit=0
+
+--- DLC ---
+[014] state=1 counter=14 bit=1
+[015] state=1 counter=15 bit=0
+[016] state=1 counter=16 bit=0
+[017] state=1 counter=17 bit=0
+
+--- DATA ---
+[018] state=1 counter=18 bit=0
+[019] state=1 counter=19 bit=0
+[020] state=1 counter=20 bit=1
+[021] state=1 counter=21 bit=1
+[022] state=1 counter=22 bit=1
+[023] state=1 counter=23 bit=1
+[024] state=1 counter=24 bit=0
+[025] state=1 counter=25 bit=0
+[026] state=1 counter=26 bit=0
+[027] state=1 counter=27 bit=0
+[028] state=1 counter=28 bit=1
+[029] state=1 counter=29 bit=0
+[030] state=1 counter=30 bit=1
+[031] state=1 counter=31 bit=0
+[032] state=1 counter=32 bit=1
+[033] state=1 counter=33 bit=1
+[034] state=1 counter=34 bit=1
+[035] state=1 counter=35 bit=0
+[036] state=1 counter=36 bit=1
+[037] state=1 counter=37 bit=0
+[038] state=1 counter=38 bit=0
+[039] state=1 counter=39 bit=0
+[040] state=1 counter=40 bit=1
+[041] state=1 counter=41 bit=0
+[042] state=1 counter=42 bit=0
+[043] state=1 counter=43 bit=1
+[044] state=1 counter=44 bit=1
+[045] state=1 counter=45 bit=0
+[046] state=1 counter=46 bit=0
+[047] state=1 counter=47 bit=1
+[048] state=1 counter=48 bit=1
+[049] state=1 counter=49 bit=0
+[050] state=1 counter=50 bit=1
+[051] state=1 counter=51 bit=0
+[052] state=1 counter=52 bit=0
+[053] state=1 counter=53 bit=1
+[054] state=1 counter=54 bit=0
+[055] state=1 counter=55 bit=0
+[056] state=1 counter=56 bit=1
+[057] state=1 counter=57 bit=0
+[058] state=1 counter=58 bit=0
+[059] state=1 counter=59 bit=0
+[060] state=1 counter=60 bit=0
+[061] state=1 counter=61 bit=1
+[062] state=1 counter=62 bit=0
+[063] state=1 counter=63 bit=1
+[064] state=1 counter=64 bit=1
+[065] state=1 counter=65 bit=1
+[066] state=1 counter=66 bit=1
+[067] state=1 counter=67 bit=0
+[068] state=1 counter=68 bit=0
+[069] state=1 counter=69 bit=0
+[070] state=1 counter=70 bit=0
+[071] state=1 counter=71 bit=0
+[072] state=1 counter=72 bit=1
+[073] state=1 counter=73 bit=1
+[074] state=1 counter=74 bit=0
+[075] state=1 counter=75 bit=1
+[076] state=1 counter=76 bit=1
+[077] state=1 counter=77 bit=1
+[078] state=1 counter=78 bit=1
+[079] state=1 counter=79 bit=0
+[080] state=1 counter=80 bit=0
+[081] state=1 counter=81 bit=0
+
+========== CRC ==========
+[082] state=2 counter=0 bit=1
+[083] state=2 counter=1 bit=0
+[084] state=2 counter=2 bit=1
+[085] state=2 counter=3 bit=0
+[086] state=2 counter=4 bit=0
+[087] state=2 counter=5 bit=0
+[088] state=2 counter=6 bit=1
+[089] state=2 counter=7 bit=1
+[090] state=2 counter=8 bit=1
+[091] state=2 counter=9 bit=1
+[092] state=2 counter=10 bit=1
+[093] state=2 counter=11 bit=1
+[094] state=2 counter=12 bit=1
+[095] state=2 counter=13 bit=1
+[096] state=2 counter=14 bit=1
+
+========== TRAILER ==========
+[097] state=3 counter=0 bit=1
+[098] state=3 counter=1 bit=1
+[099] state=3 counter=2 bit=1
+[100] state=3 counter=3 bit=1
+[101] state=3 counter=4 bit=1
+[102] state=3 counter=5 bit=1
+[103] state=3 counter=6 bit=1
+[104] state=3 counter=7 bit=1
+[105] state=3 counter=8 bit=1
+[106] state=3 counter=9 bit=1
+[107] state=3 counter=10 bit=1
+[108] state=3 counter=11 bit=1
+
+========== IDLE ==========
+
+=====================================
+SUMMARY
+=====================================
+
+CRC GENERATED HEX = 51ff
+CRC GENERATED = 101000111111111
+TOTAL BITS SENT   = 109
+VALID CYCLES      = 109

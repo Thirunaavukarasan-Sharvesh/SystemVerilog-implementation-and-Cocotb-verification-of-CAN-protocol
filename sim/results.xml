@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1770610772" />
+    <testcase name="tb_bit_timing_and_sync" classname="tb_bit_timing_sync" file="/workspaces/CAN_Bus_cocotb/sim/tb_bit_timing_sync.py" lineno="9" time="0.0019426345825195312" sim_time_ns="10.0" ratio_time="5147.648502700049" />
+  </testsuite>
+</testsuites>

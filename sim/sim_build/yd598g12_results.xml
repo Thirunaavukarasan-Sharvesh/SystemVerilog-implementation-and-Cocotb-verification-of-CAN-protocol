@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1781174521" />
+    <testcase name="destuffing_test" classname="bit_destuffing.tb" file="/workspaces/CAN_Bus_cocotb/sim/bit_destuffing/tb.py" lineno="40" time="0.0550847053527832" sim_time_ns="2010.0" ratio_time="36489.257537590565">
+      <failure error_type="AssertionError" error_msg="Random Valid failed with 51 mismatches&#10;assert 51 == 0&#10; +  where 51 = &lt;bit_destuffing.scoreboard.Scoreboard object at 0x780a643cefc0&gt;.fail" />
+    </testcase>
+  </testsuite>
+</testsuites>

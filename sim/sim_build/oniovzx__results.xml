@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1781066500" />
+    <testcase name="destuffing_test" classname="bit_destuffing.tb" file="/workspaces/CAN_Bus_cocotb/sim/bit_destuffing/tb.py" lineno="23" time="0.002262115478515625" sim_time_ns="0.0" ratio_time="0.0">
+      <failure error_type="ValueError" error_msg="Can't convert LogicArray to int: it contains non-0/1 values" />
+    </testcase>
+  </testsuite>
+</testsuites>

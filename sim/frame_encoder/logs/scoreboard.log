@@ -1,0 +1,28 @@
+[ERROR] 1175000 : CRC mismatch Expected=5dc9 Actual=0c28
+-----------------------------------------
+Scoreboard
+========================================
+[INFO ] 1175000 : EXPECTED
+[INFO ] 1175000 : ID=7c7
+[INFO ] 1175000 : DLC=8
+[INFO ] 1175000 : CRC=5dc9
+[INFO ] 1175000 : ACTUAL
+[INFO ] 1175000 : ID=7c7
+[INFO ] 1175000 : DLC=8
+[INFO ] 1175000 : CRC=0c28
+1175000 : FRAME PASS
+[ERROR] 2295000 : ID Mismatch Expected=523 Actual=094
+[ERROR] 2295000 : DATA Mismatch Expected=9b227d0cac34025e Actual=1a189f37567e0441
+[ERROR] 2295000 : CRC mismatch Expected=22c7 Actual=286e
+-----------------------------------------
+Scoreboard
+========================================
+[INFO ] 2295000 : EXPECTED
+[INFO ] 2295000 : ID=523
+[INFO ] 2295000 : DLC=2
+[INFO ] 2295000 : CRC=22c7
+[INFO ] 2295000 : ACTUAL
+[INFO ] 2295000 : ID=094
+[INFO ] 2295000 : DLC=2
+[INFO ] 2295000 : CRC=286e
+2295000 : FRAME PASS

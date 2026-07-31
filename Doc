@@ -1,0 +1,210 @@
+1. UVM structure
+
+    project/
+    │
+    ├── rtl/ or src/
+    │     ├── can_tx.sv
+    │     ├── crc.sv
+    │     └── ...
+    │
+    ├── tb/
+    │     ├── test_can.py
+    │     ├── env/
+    │     │     ├── agent/
+    │     │     │      ├── driver.py
+    │     │     │      ├── monitor.py
+    │     │     │      ├── sequencer.py
+    │     │     │      └── sequence.py
+    │     │     │
+    │     │     ├── scoreboard.py
+    │     │     ├── env.py
+    │     │     └── transaction.py
+    │     │
+    │     └── utils/
+    │
+    └── sim/
+    
+                 TEST
+                   │
+            ┌──────┴──────┐
+            │ Environment │
+            └──────┬──────┘
+          Agent(s) │
+        ┌──────────┴──────────┐
+        Driver   Monitor   Coverage
+        │         │
+        │     Scoreboard
+        │         │
+        DUT <-----|
+
+
+                Sequence
+                ↓
+                queue/mailbox
+                ↓
+                Driver
+                ↓
+                DUT Pins / Interface
+                ↓
+                DUT
+                ↓
+                Monitor
+                ↓
+                Scoreboard
+
+2. Threads:
+    clock thread
+    reset thread
+    driver thread
+    monitor thread
+    coverage thread
+    scoreboard thread
+    watchdog thread
+
+3. Stimulus patterns
+
+    run 5000 cycles
+    random enable
+    random reset
+    walking 1/0 tests
+    add 3 assertions
+    add coverage counters
+    all zeros stream
+    all ones stream
+    walking 1
+    walking 0
+    alternating bits
+    random enable
+    reset during operation
+    long run (10k cycles)
+
+4. Verification Hierarchy
+
+    Unit Testing
+        ↓
+    Integration Testing
+        ↓
+    Functional Testing
+        ↓
+    Smoke Testing
+        ↓
+    Regression Testing
+        ↓
+    Stress / Corner Testing
+
+    i) Unit Test:
+        Does ONE module work correctly in isolation?
+    
+    ii) Integration Test:
+        Do multiple modules work correctly together?
+            issues appear like:
+                timing mismatch
+                handshake bugs
+                wrong enable ordering
+                state synchronization problems
+    iii) Functional Test:
+        Does the DUT satisfy protocol behavior/specification? -> protocol correctness 
+    iv) Smoke Test:
+        Is the design fundamentally alive?
+    v) Regression Test:
+        Did new changes break old functionality?
+    vi) Stress Testing:
+        Can the DUT survive difficult/extreme conditions?
+    vii) Corner Case Testing:
+        Does DUT handle rare edge conditions?
+
+5. Modules
+    1. Bit Timing Sync        
+    2. CRC Generator/Checker
+    3. Bit Stuffing/De-stuffing
+    4. Frame Decoder
+    5. Frame Encoder
+    6. RX/TX FSM
+    7. Bit Stream Engine
+    8. Arbitration Logic
+    9. Error Detection
+    10. Acceptance Filter
+    11. FIFOs/Buffers
+    12. Register Interface
+    13. Top Integration
+
+6. Stimulus Patterns 
+    1. All ones 
+    2. All zeros
+    3. Walking 1 
+    4. Wlaking 0
+    5. Cumulative Step up 1
+    6. Step down 1
+    7. Random
+    8. Toggle / Alternating -> 1010 1010
+    9. Checker Board
+    10. 
+
+7. UVM modules:
+    1. Scoreboard
+    2. Sequnce 
+    3. Sequncer
+    4. Driver
+    5. Monitor
+    6. Logger
+    7. Coverage
+    8. Queue/mailbox/Fifo
+    9. Constrained Random
+    10. Assertion
+    11. Factory / Config DB
+    12. Interface 
+
+8. Avalon-ST
+
+9. End of the day 
+
+    RTL Design
+        ↓
+    Module Verification
+        ↓
+    CAN Controller
+        ↓
+    AXI-Lite Peripheral
+        ↓
+    PicoRV32 SoC
+        ↓
+    Firmware Driver (C)
+        ↓
+    Two-Node CAN Network
+        ↓
+    System Validation
+
+10. Randomization
+    $urandom()     -> 32-bit unsigned random integer
+    $urandom_range -> $urandom_range(0, 15); // random number between 0 and 15
+    rand           -> random variable
+    randc          -> cyclic random variable
+    randomize()    -> run constraint solver
+    constraint     -> legal values/rules
+    inside         -> value belongs to set/range
+    pre_randomize  -> automatic callback before solving
+    post_randomize -> automatic callback after solving
+    dist           -> weighted probabilities
+    :=             -> weight per value
+    :/             -> weight spread across range
+
+11. CMD
+    1. verilator --lint-only -Wall rtl/*.sv  (without Wall normal not strict)
+    2. verilator --lint-only -Wall -Wno-UNUSEDSIGNAL rtl/*.sv - unsed signals
+    3. verilator --lint-only -Wall -Wno-UNUSEDSIGNAL -Wno-UNUSED rtl/*.sv - unused ports
+    4. verilator -Wall --lint-only rtl/*.sv - to see all warnings
+    5. verilator --binary ..rtl/lfsr.sv ..rtl/crc.sv ..rtl/frame_encoder.sv ..sim/frame_encoder/tb.sv
+    6. ./obj_dir/Vtb - to run 
+    7. nl -ba rtl/frame_encoder.sv | sed -n '135,165p' - to show lines
+    8. verilator --binary --timing --trace --top-module frame_enc_tb rtl/lfsr.sv rtl/frame_encoder.sv rtl/crc.sv sim/frame_encoder/tb.sv
+    9. verilator --binary --trace --timing --top-module top sim/frame_encoder/package.sv sim/frame_encoder/interface.sv sim/frame_encoder/logger.sv sim/frame_encoder/transaction.sv sim/frame_encoder/generator.sv sim/frame_encoder/driver.sv sim/frame_encoder/monitor.sv sim/frame_encoder/scoreboard.sv sim/frame_encoder/environment.sv rtl/lfsr.sv rtl/crc.sv rtl/frame_encoder.sv sim/frame_encoder/top.sv 
+    10.  ~/verilator/bin/verilator --binary .... [FOR new version 5.046]
+    
+12. PyVSC:
+
+    1. weighted distributions (dist)
+    2. temporary constraints
+    3. soft constraints
+    4. coverage
+    5. helper methods
+    6. Inside constraints
