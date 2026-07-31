@@ -119,14 +119,15 @@
     3. Bit Stuffing/De-stuffing
     4. Frame Decoder
     5. Frame Encoder
-    6. RX/TX FSM
+    6. RX/TX FSM  / Transaction Layer
     7. Bit Stream Engine
     8. Arbitration Logic
-    9. Error Detection
+    9. Error Detection/Manager
     10. Acceptance Filter
     11. FIFOs/Buffers
     12. Register Interface
-    13. Top Integration
+    13. Coverage and regression
+    14. Top Integration
 
 6. Stimulus Patterns 
     1. All ones 
