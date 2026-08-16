@@ -1,4 +1,4 @@
-# CAN_Bus_cocotb
+# SystemVerilog implementation and Cocotb verification of CAN protocol
 
 SystemVerilog implementation and Cocotb-based verification of CAN protocol building blocks.
 
