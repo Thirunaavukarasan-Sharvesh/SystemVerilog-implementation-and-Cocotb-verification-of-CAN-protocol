@@ -57,7 +57,7 @@ The verification work is being developed incrementally as the CAN protocol compo
 * SystemVerilog
 * Cocotb
 * Python
-* Icarus Verilog
+* Icarus Verilog / Verilator
 * GTKWave
 
 ## Project Status
